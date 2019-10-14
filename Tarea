@@ -1,0 +1,21 @@
+#include<stdio.h>
+long fac(long n);
+
+int main(){
+
+     int n;
+     printf("Ingresa número a calcular"); scanf("%d", &n);
+     for( int i=0; i <= n; i++){
+          printf("%ld\n", fac(i));
+     }
+     return 0;
+}
+
+long fac(long n){
+     if(n <= 1){
+          return 1;
+     }else{
+          return(n * fac(n-1));
+     }
+}
+     
